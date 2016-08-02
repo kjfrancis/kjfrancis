@@ -95,6 +95,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* Header */
 header {
     text-align: right;
     padding-right: 10px;
@@ -113,12 +114,15 @@ header {
     text-decoration: none;
 }
 
+/* Navigation */
+
 nav {
     float: right;
 }
 
 .main-nav nav {
     border-bottom: 1px solid gray;
+    margin-top: 30px;
 }
 
 .main-nav {
@@ -156,23 +160,28 @@ nav {
     margin-left: 750px;
 }
 
-img {
+/* Logo */
+
+.main-nav img {
     float: left;
-    width: 20%;
-    height: 45%;
+    width: 15%;
+    height: 40%;
     margin-left: 50px;
+    padding-bottom: 20px;
+    z-index: 100;
 }
 
-.carouselSlide {
+/* Image Slider */
+
+/*.carouselSlide {
     border: 2px ridge black;
     align-content: center;
-    width: 600px;
-    height: 600px;
-}
+    width: 400px;
+    height: 400px;
+    padding-bottom: 150px;
+}*/
 
-aside {
-    float: left;
-}
+/* Other Home Page Sections */
 
 .article1 {
     float: left;
@@ -200,6 +209,8 @@ aside {
     height: 50px;
 }
 
+/* Footer */
+
 footer {
     text-align: center;
 }
@@ -219,11 +230,25 @@ footer {
     text-decoration: none;
 }
 
+/* About Page */
+
 .about {
     margin-left: 40px;
     margin-right: 50px;
     padding-right: 115px;
 }
+.personalWords {
+    text-align: center;
+    width: 50%;
+    margin-left: 200px;
+}
+
+#aboutQuote {
+    padding-top: 100px;
+    padding-left: 25px;
+}
+
+/* Projects Page */
 
 .projectoverview {
     float: left;
@@ -237,16 +262,11 @@ footer {
     float: left;
 }
 
-.personalWords {
-    text-align: center;
-    width: 50%;
-    margin-left: 200px;
+aside {
+    float: left;
 }
 
-#aboutQuote {
-    padding-top: 100px;
-    padding-left: 25px;
-}
+/* Architect Page */
 
 .architect {
     margin-left: 50px;
@@ -273,6 +293,7 @@ footer {
     height: 250;
 }
 
+/* Form */
 fieldset {
     margin-top: 100px;
 }
