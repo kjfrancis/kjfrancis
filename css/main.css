@@ -99,7 +99,7 @@ textarea {
 header {
     text-align: right;
     padding-right: 10px;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #BDBDBD;
     padding: 5px;
 }
 
@@ -121,7 +121,7 @@ nav {
 }
 
 .main-nav nav {
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #BDBDBD;
     margin-top: 30px;
 }
 
@@ -155,10 +155,6 @@ nav {
     padding-right: 20px;
 }
 
-.main-nav hr {
-    width: 33%;
-    margin-left: 750px;
-}
 
 /* Logo */
 
@@ -174,14 +170,23 @@ nav {
 /* Image Slider */
 
 /*.carouselSlide {
+    display: inline;
     border: 2px ridge black;
-    align-content: center;
-    width: 400px;
-    height: 400px;
-    padding-bottom: 150px;
-}*/
+    align: center;
+    width: 835px;
+    height: 330px;
+} */
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+    filter: none;
+}
 
 /* Other Home Page Sections */
+
+.homePage {
+    padding-top: 50px;
+}
 
 .article1 {
     float: left;
@@ -191,13 +196,14 @@ nav {
     float: left;
 }
 
+.article1, .article2 {
+    padding-top: 16px;
+}
+
 .thirdrow {
     padding-top: 20px;
 }
 
-.thirdrow span {
-    padding-left: 150px;
-}
 
 .social-media {
     text-decoration: none;
@@ -233,10 +239,10 @@ footer {
 /* About Page */
 
 .about {
-    margin-left: 40px;
-    margin-right: 50px;
-    padding-right: 115px;
+    width: 75%;
+    margin-left: 50px;
 }
+
 .personalWords {
     text-align: center;
     width: 50%;
@@ -244,8 +250,9 @@ footer {
 }
 
 #aboutQuote {
-    padding-top: 100px;
-    padding-left: 25px;
+    width: 25%;
+    float: right;
+    clear: both;
 }
 
 /* Projects Page */
@@ -273,16 +280,19 @@ aside {
     margin-right: 50px;
 }
 
+.archHome {
+    margin-left: -21px;
+    border-right: 1px solid #BDBDBD;
+    height: 70%;
+}
+
 #archQuote {
     margin-top: 38px;
+    padding-left: 37px;
 }
 
 /* Contact Page */
 #c1 {
-    margin-left: 50px;
-}
-
-#c2 {
     margin-left: 50px;
 }
 
@@ -293,14 +303,19 @@ aside {
     height: 250;
 }
 
+#c2 {
+    display: inline-block;
+    padding-left: 19px;
+}
+
 /* Form */
+
 fieldset {
-    margin-top: 100px;
+    margin-top: 20px;
 }
 
 form input {
     display: block;
-    margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 20px;
     width: 250px;
@@ -311,9 +326,16 @@ form textarea {
     margin-left: 20px;
 }
 
+/* Other */
 
+.quoteName {
+    display: block;
+}
 
-
+.wholeHouse, .bathroom, .kitchen {
+    margin-left: 50px;
+    margin-right: 50px;
+}
 
 
 
