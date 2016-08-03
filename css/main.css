@@ -335,8 +335,8 @@ form textarea {
 .wholeHouse, .bathroom, .kitchen {
     margin-left: 50px;
     margin-right: 50px;
+    margin-top: 75px;
 }
-
 
 
 
@@ -422,9 +422,51 @@ form textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (max-width: 26.25em) {
     /* Style adjustments for viewports that meet the condition */
+
+    .main-nav img {
+        width: 35%;
+        height: 60%;
+        margin-left: 130px;
+    }
+
+    .hamburger {
+        float: right;
+    }
+
+    .social-media {
+        padding-right: 40px;
+    }
+
+    .archHome {
+        border-right: none;
+        margin-left: 21px;   
+    }
+    
+    #c1 {
+        display: none;
+    }
+
+    #contactPgPic {
+        display: none;
+    }
+
+    #c2 {
+        padding-top: 50px;
+    }
 }
+
+@media only screen and (max-width: 1024px) {
+    .carouselSlide {
+        width: 50%
+    }
+
+    .about {
+        padding-left: 10px;
+    }
+}
+
 
 @media print,
        (-o-min-device-pixel-ratio: 5/4),
