@@ -2,7 +2,7 @@
 	// Show subNav
 $('#projects').mouseenter(showDropDown);
 
-$('#subNav').mouseleave(hideDropDown);
+$('.dropdown-wrapper').mouseleave(hideDropDown);
 
 function showDropDown () {
 	$('#subNav').fadeIn(100);

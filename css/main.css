@@ -9,6 +9,10 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+* {
+    box-sizing: border-box;
+}
+
 
 html {
     color: #222;
@@ -145,6 +149,11 @@ nav {
     padding-top: 20px;
 }
 
+#projectsHover {
+    position: absolute;
+    display: none;
+}
+
 #subNav li {
     list-style-type: none;
 }
@@ -169,13 +178,12 @@ nav {
 
 /* Image Slider */
 
-/*.carouselSlide {
-    display: inline;
-    border: 2px ridge black;
-    align: center;
+.slide {
+    text-align: center;
     width: 835px;
     height: 330px;
-} */
+    margin: auto;
+}
 
 .carousel-control.left, .carousel-control.right {
     background-image: none;
@@ -219,6 +227,7 @@ nav {
 
 footer {
     text-align: center;
+    clear: both;
 }
 
 .footer {
@@ -240,7 +249,9 @@ footer {
 
 .about {
     width: 75%;
-    margin-left: 50px;
+    /*margin-left: 50px;*/
+    float: left;
+    padding-left: 50px;
 }
 
 .personalWords {
@@ -252,7 +263,7 @@ footer {
 #aboutQuote {
     width: 25%;
     float: right;
-    clear: both;
+    padding: 25px;
 }
 
 /* Projects Page */
