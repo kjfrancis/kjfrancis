@@ -13,6 +13,9 @@
     box-sizing: border-box;
 }
 
+h1, h2 {
+    color: #9c230b;
+}
 
 html {
     color: #222;
@@ -135,7 +138,11 @@ nav {
 
 .dropdown-wrapper {
     position: relative;
+    background-color: #FFFFFF;
+    z-index: 10;
 }
+
+
 
 #subNav {
     display: none;
@@ -153,6 +160,7 @@ nav {
 
 #subNav li {
     list-style-type: none;
+    background-color: #FFFFFF;
 }
 
 .main-nav a {
@@ -251,25 +259,27 @@ footer {
 .personalWords {
     text-align: center;
     width: 50%;
-    margin-left: 200px;
+    margin: auto;
+    padding-bottom: 15px;
 }
 
 #aboutQuote {
     width: 25%;
     float: right;
     padding: 25px;
-    margin-top: 75px;
+    /*margin-top: 75px;*/
 }
 
 /* Projects Page */
 
-.proj-home {
-    margin-left: 50px;
+#proj-wrapper{
+    width: 970px;
+    margin: auto;
+    padding-left: 15px;
 }
 
 .projectoverview {
     float: left;
-    margin-left: -57px;
     padding-top: 25px;
 }
 
@@ -280,7 +290,7 @@ footer {
 
 aside {
     float: left;
-    margin-left: 30px;
+    margin-top: 20px;
 }
 
 /* Architect Page */
@@ -457,9 +467,35 @@ form textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (max-width: 26.25em) {
     /* Style adjustments for viewports that meet the condition */
+@media only screen and (max-width: 1024px) {
+    .carouselSlide {
+        width: 50%
+    }
 
+    .about {
+        padding-left: 50px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .archHome {
+        border-right: none;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .about {
+        width: 100%;
+    }
+
+    #aboutQuote {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 26.25em) {
     /* Home Screen */
     .main-nav img {
         width: 50%;
@@ -486,6 +522,11 @@ form textarea {
         padding-top: 15px;
     }
     
+    /* About Page */
+    .about {
+        padding-right: 20px;
+    }
+
     /* Projects Page */
     .proj-home h1 {
         font-size: 1.5em;
@@ -502,6 +543,11 @@ form textarea {
     }
 
     .projectoverview img {
+        display: none;
+    }
+    
+    /* Project Detail Pages */
+   .thumbNails, .fullImage img {
         display: none;
     }
 
@@ -525,15 +571,6 @@ form textarea {
     }
 }
 
-@media only screen and (max-width: 1024px) {
-    .carouselSlide {
-        width: 50%
-    }
-
-    .about {
-        padding-left: 10px;
-    }
-}
 
 
 
