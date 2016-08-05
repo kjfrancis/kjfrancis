@@ -107,12 +107,10 @@ header {
     padding: 5px;
 }
 
-
 .header p {
     display: inline;
     margin-left: 25px;
 }
-
 
 .header a {
     text-decoration: none;
@@ -139,7 +137,6 @@ nav {
     position: relative;
 }
 
-
 #subNav {
     display: none;
     position: absolute;
@@ -158,12 +155,10 @@ nav {
     list-style-type: none;
 }
 
-
 .main-nav a {
     text-decoration: none;
     padding-right: 20px;
 }
-
 
 /* Logo */
 
@@ -212,7 +207,6 @@ nav {
     padding-top: 20px;
 }
 
-
 .social-media {
     text-decoration: none;
     display: inline;
@@ -249,7 +243,7 @@ footer {
 
 .about {
     width: 75%;
-    /*margin-left: 50px;*/
+    margin-top: 50px;
     float: left;
     padding-left: 50px;
 }
@@ -264,24 +258,29 @@ footer {
     width: 25%;
     float: right;
     padding: 25px;
+    margin-top: 75px;
 }
 
 /* Projects Page */
 
+.proj-home {
+    margin-left: 50px;
+}
+
 .projectoverview {
     float: left;
+    margin-left: -57px;
+    padding-top: 25px;
 }
 
 #projects {
     z-index: 100;
     position: relative;
 }
-.projectsamples {
-    float: left;
-}
 
 aside {
     float: left;
+    margin-left: 30px;
 }
 
 /* Architect Page */
@@ -298,11 +297,12 @@ aside {
 }
 
 #archQuote {
-    margin-top: 38px;
+    margin-top: 20px;
     padding-left: 37px;
 }
 
 /* Contact Page */
+
 #c1 {
     margin-left: 50px;
 }
@@ -346,7 +346,7 @@ form textarea {
 .wholeHouse, .bathroom, .kitchen {
     margin-left: 50px;
     margin-right: 50px;
-    margin-top: 75px;
+    margin-top: 50px;
     padding-bottom: 25px;
 }
 
@@ -460,25 +460,58 @@ form textarea {
 @media only screen and (max-width: 26.25em) {
     /* Style adjustments for viewports that meet the condition */
 
+    /* Home Screen */
     .main-nav img {
-        width: 35%;
-        height: 60%;
-        margin-left: 130px;
+        width: 50%;
+        margin-left: 100px;
     }
 
-    .hamburger {
-        float: right;
+    .slide {
+        width: 75%;
+    }
+
+    .carousel-control.left, .carousel-control.right {
+        width: 75%;
+        color: #000000;
+        margin-top: -20px;
+    }
+
+    .homePage {
+        margin-top: -200px;
     }
 
     .social-media {
-        padding-right: 40px;
+        display: inline-block;
+        padding-right: 50px;
+        padding-top: 15px;
+    }
+    
+    /* Projects Page */
+    .proj-home h1 {
+        font-size: 1.5em;
     }
 
+    .proj-home h2 {
+        font-size: 1.25em;
+    }
+
+    .projectoverview {
+        font-size: 1em;
+        padding-left: 25px;
+        width: 75%;
+    }
+
+    .projectoverview img {
+        display: none;
+    }
+
+    /* Architect Page */
     .archHome {
         border-right: none;
         margin-left: 21px;   
     }
     
+    /* Contact Page */
     #c1 {
         display: none;
     }
@@ -501,6 +534,11 @@ form textarea {
         padding-left: 10px;
     }
 }
+
+
+
+
+
 
 
 @media print,
