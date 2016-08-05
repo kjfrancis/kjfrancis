@@ -347,8 +347,32 @@ form textarea {
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 75px;
+    padding-bottom: 25px;
 }
 
+/* Image Gallery on subNav pages */
+
+.thumbNails {
+    width: 15%;
+    float: left;
+}
+
+.thumbNails img {
+    margin-left: 50px;
+    padding: 2px;
+    display: block;
+    max-width: 100%;
+}
+
+.thumbNails img:hover {
+    border: 4px solid blue;
+    cursor: pointer;
+}
+
+.fullImage {
+    float: right;
+    width: 75%;
+}
 
 
 /* ==========================================================================
