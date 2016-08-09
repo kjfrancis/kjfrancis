@@ -490,7 +490,7 @@ form textarea {
     }
 
     #aboutQuote {
-        display: none;
+        width: 100%;
     }
 }
 
@@ -529,11 +529,13 @@ form textarea {
 
     /* Projects Page */
     .proj-home h1 {
-        font-size: 1.5em;
+        font-size: 1em;
+        padding-left: -15px;
     }
 
     .proj-home h2 {
-        font-size: 1.25em;
+        font-size: .938em;
+        padding-left: -15px;
     }
 
     .projectoverview {
