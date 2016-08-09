@@ -484,6 +484,12 @@ form textarea {
     }
 }
 
+@media only screen and (max-width: 991px) {
+    .archHome {
+        border: none;
+    }
+}
+
 @media only screen and (max-width: 800px) {
     .archHome {
         border-right: none;
